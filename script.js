@@ -1,21 +1,19 @@
 async function loadDrinks() {
-  // URL zur drinks.json auf GitHub (achte auf den RAW-Link!)
-  const url = "https://kjeld166.github.io/Test/drinks.json";
-
   try {
-    const response = await fetch(url);
-    const drinks = await response.json();
+    const response = await fetch("data.json"); // gleiche Ebene wie index.html
+    if (!response.ok) {
+      throw new Error("Datei nicht gefunden");
+    }
+    const data = await response.json();
 
     const list = document.getElementById("drink-list");
-    list.innerHTML = "";
-
-    drinks.forEach(drink => {
+    data.drinks.forEach(drink => {
       const li = document.createElement("li");
-      li.textContent = `${drink.name} – ${drink.size} – ${drink.price.toFixed(2)} €`;
+      li.textContent = `${drink.name} - ${drink.size} - ${drink.price.toFixed(2)} €`;
       list.appendChild(li);
     });
-  } catch (err) {
-    console.error("Fehler beim Laden:", err);
+  } catch (error) {
+    console.error("Fehler beim Laden:", error);
   }
 }
 

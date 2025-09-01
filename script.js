@@ -1,6 +1,6 @@
 async function loadDrinks() {
   // URL zur drinks.json auf GitHub (achte auf den RAW-Link!)
-  const url = "https://raw.githubusercontent.com/<DEIN_USER>/<DEIN_REPO>/main/drinks.json";
+  const url = "https://kjeld166.github.io/Test/drinks.json";
 
   try {
     const response = await fetch(url);

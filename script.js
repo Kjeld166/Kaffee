@@ -9,7 +9,7 @@ async function loadDrinks() {
     const list = document.getElementById("drink-list");
     data.drinks.forEach(drink => {
       const li = document.createElement("li");
-      li.textContent = `${drink.name} - ${drink.size} - ${drink.price.toFixed(2)} €`;
+      li.textContent = `${drink.name}`;
       list.appendChild(li);
     });
   } catch (error) {

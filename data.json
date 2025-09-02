@@ -1,13 +1,13 @@
 {
   "drinks": [
     {
-      "name": "Kaffee",
+      "name": "Kaffee"
     },
     {
-      "name": "Cappuccino",
+      "name": "Cappuccino"
     },
     {
-      "name": "Milch",
+      "name": "Milch"
     },
     {
       "name": "Espresso"

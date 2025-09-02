@@ -1,22 +1,10 @@
 {
   "drinks": [
-    {
-      "name": "Kaffee"
-    },
-    {
-      "name": "Cappuccino"
-    },
-    {
-      "name": "Milch"
-    },
-    {
-      "name": "Espresso"
-    },
-    {
-      "name": "Wasser"
-    },
-    {
-      "name": "Tee"
-    }
+    { "name": "Kaffee" },
+    { "name": "Cappuccino" },
+    { "name": "Milch" },
+    { "name": "Espresso" },
+    { "name": "Wasser" },
+    { "name": "Tee" }
   ]
 }
